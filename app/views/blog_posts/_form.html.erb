@@ -3,7 +3,7 @@
 	<% if @blog_post.errors.any? %>
 		<div id= "error_explanation">
 		<h2><%= pluralize(@blog_post.errors.count, "error") %> 
-		progibited this blog post from being saved:</h2>	
+		prohibited this blog post from being saved:</h2>	
 			<ul>
 				<%= @blog_post.errors.full_messages.each do |message| %>
 					<li> <%= message %></li>

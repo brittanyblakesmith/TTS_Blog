@@ -9,8 +9,10 @@
 					</div>	
 					<div class="panel=body">
 						by <%= blog_post.author %><br>
+						<p><i>Created: <%= blog_post.created_at.strftime('%m/%d/%Y at %I:%M%p') %></i></p>
 						<p><%= truncate blog_post.blog_entry, length: 100 %>
 							<%= link_to "Read More", blog_post_path(blog_post) %>
+							
 						</p>	
 					</div>
 					<div class="panel-footer">
